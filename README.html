@@ -4,19 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unsupervised Machine Learning Project For Fitness Data Clustering & PCA</title>
 
-<style>
-h1 {
-text-align: center;
-}
-
-table,
-th,
-td {
-border: 1px solid black;
-}
-</style>
 
 
 </head>
@@ -34,12 +22,12 @@ Unsupervised Machine Learning Project For Fitness Data Clustering & PCA</h1>
 <ul>
 
 <li>The project is written in Python in a Jupyter Notebook format</li>
-<li>The motivation behind the dataset is to produce a machine learning model that can categorize people based on their fitness data </li> 
-<li>The used data contains multiple features therefore Principal Component Analysis (PCA) is used to decrease the number of features for visualization purposes</li> 
+<li>The motivation behind the dataset is to produce a machine learning model that can categorize people based on their fitness data </li>
+<li>The used data contains multiple features therefore Principal Component Analysis (PCA) is used to decrease the number of features for visualization purposes</li>
 
 <li>The dataset behind the project is available from kaggle.com <a
 href="https://www.kaggle.com/datasets/kukuroo3/body-performance-data"> Dataset Link
-</a>  
+</a>
 <li>The purpose of the dataset is to cluster people based on their fitness perfromance</li>
 
 <li>The project initially starts by conducting EDA in preprocessing.ipynb file</li>
@@ -100,7 +88,7 @@ href="https://www.kaggle.com/datasets/kukuroo3/body-performance-data"> Dataset L
 
 <li>A count plot of the four performance classes in the class feature</li>
 <ul>
-<li>The data between the different classes of performance is balanced. The data's author did not specify the evaluation measurements for this feature. However, 
+<li>The data between the different classes of performance is balanced. The data's author did not specify the evaluation measurements for this feature. However,
 during the extensive EDA it was indicated that class A meant to be the class with the highest performance and class D is the class with the lowest performance</li>
 <center>   <img src="Figures/classesdis.JPG" alt="countplot_class" width="500" height="500">   </center>
 
@@ -252,19 +240,19 @@ during the extensive EDA it was indicated that class A meant to be the class wit
 <h2>Conclusions: </h2>
 
 <ul>
-<li>      The K-Means Clustern Algorithm was able to categorize data based on the K value 
+<li>      The K-Means Clustern Algorithm was able to categorize data based on the K value
 </li>
-<li>      After conducting EDA the "Elbow Method" was used to analyze specific values of K. Namely K = 10 
+<li>      After conducting EDA the "Elbow Method" was used to analyze specific values of K. Namely K = 10
 </li>
 <center>   <img src="Figures/pairplot_clustering.JPG" alt="pairplot" width="1500" height="1500">   </center>
 
 <li>     <b>   When K = 10 it is difficult to build up a conclusion on the meaning on the clustered data. Which is why PCA is needed to be employed. However, based on viewing the data the following can be concluded </b>
 </li>
-<ul> 
-<li>    Cluster 0: The dark blue this cluster seems to be merged with the other clusters and it difficult to come up with a conclusion for it 
+<ul>
+<li>    Cluster 0: The dark blue this cluster seems to be merged with the other clusters and it difficult to come up with a conclusion for it
 </li>
-<Li> 
-Cluster 1: The orange cluster this cluster seems to be on the: 
+<Li>
+Cluster 1: The orange cluster this cluster seems to be on the:
 
 <ul>
 <li>
@@ -279,8 +267,8 @@ High-end on the height, grip force, sit-ups, broad jumps
 </ul>
 
 </Li>
-<Li> 
-Cluster 2: The green cluster 
+<Li>
+Cluster 2: The green cluster
 <ul>
 <li>
 Mid-end on the age, body fat percentage, diastolic rate, systolic rate, sit and bend forward
@@ -291,11 +279,11 @@ High-end on the hight, weight, grip force, situps, broad jump
 </li>
 </ul>
 
-<Li> 
+<Li>
 Cluster 3: The red this cluster seems to be merged with the other clusters and it difficult to come up with a conclusion for it
 
 </Li>
-<Li>             Cluster 4: The purple cluster 
+<Li>             Cluster 4: The purple cluster
 
 <ul>
 <li>
@@ -307,12 +295,12 @@ High-end on the height, weight, grip force, sit ups, broad jump
 </ul>
 
 </Li>
-<Li> 
-Cluster 5: The brown cluster this cluster seems to be merged with the other clusters and it difficult to come up 
+<Li>
+Cluster 5: The brown cluster this cluster seems to be merged with the other clusters and it difficult to come up
 
 </Li>
 
-<Li> Cluster 6: The pink cluster 
+<Li> Cluster 6: The pink cluster
 <ul>
 <li>
 Low-end on the, body fat percentage
@@ -327,15 +315,15 @@ High-end on the diastolic rate, systolic rate,  sit ups, broad jump
 
 
 </Li>
-<Li> 
+<Li>
 
-Cluster 7: The grey cluster 
+Cluster 7: The grey cluster
 <ul>
 <li>
 Low-end on the, sit ups count
 </li>
 <li>
-Mid-end on the diastolic rate, systolic rate, grip force, sit and bend forward distance, and broad jumps 
+Mid-end on the diastolic rate, systolic rate, grip force, sit and bend forward distance, and broad jumps
 </li>
 <li>
 High-end on the height, weight, body fat percentage
@@ -343,8 +331,8 @@ High-end on the height, weight, body fat percentage
 </ul>
 
 </Li>
-<Li> 
-Cluster 8: The olive cluster 
+<Li>
+Cluster 8: The olive cluster
 <ul>
 <li>
 Mid-end on the, age, height, weight, body fat percentage, diastolic rate, systolic rate, sit and bend forward distance
@@ -355,18 +343,18 @@ High-end on the grip force, sit ups, broad jump
 </ul>
 
 </Li>
-<Li> 
+<Li>
 
-Cluster 9: The light blue cluster 
+Cluster 9: The light blue cluster
 <ul>
 <li>
-Low-end on the, height, working, diastolic rate, systolic rate, grip force, sit ups, broad jump 
+Low-end on the, height, working, diastolic rate, systolic rate, grip force, sit ups, broad jump
 </li>
 <li>
 Mid-end on the  sit and bend forward distance
 </li>
 <li>
-High-end on the body fat percentage 
+High-end on the body fat percentage
 </li>
 </ul>
 
@@ -384,7 +372,7 @@ High-end on the body fat percentage
 
 <li>     <b> PCA</b>
 </li>
-<ul> 
+<ul>
 <li>    PCA is a linear dimensionality reduction technique. PCA reduces the number correlated features (i.e., Dimensions) in an unsupervised ML problem
 </li>
 <li>
@@ -393,7 +381,7 @@ The above results of running the PCA algorithm indicates:
 
 <ul>
 <li>
-If we have only 1 "Principal Component" PC we would have a data representation of 41.8 % 
+If we have only 1 "Principal Component" PC we would have a data representation of 41.8 %
 </li>
 <li>
 If we have only 2 PCs we would have a data representation of 62.34 %. The first PC would be 41.8% of data representation and the second one is 20.54% of data representation
@@ -413,7 +401,7 @@ For this work we would like to view the data in 2D therefore the works will focu
 </ul>
 
 
-<li> When N=2 in PCA 
+<li> When N=2 in PCA
 
 <ul>
 <center>   <img src="Figures/pcaN2.JPG" alt="pairplot" width="500" height="500">   </center>
@@ -443,16 +431,16 @@ The following clusters could cause an issue due to their overlapping: The red (3
 
 <li>The above figure attempts to classifies the data further by adding the "gender" feature as a style</li>
 <li>
-Clusters orange (1), green (2), red (3), pink (6), grey (7), olive (8) seem to mainly contain males 
+Clusters orange (1), green (2), red (3), pink (6), grey (7), olive (8) seem to mainly contain males
 </li>
 <li>
-Clusters grey (7) and purple (4) seem to contain both males and females. However, majority of the grey cluster are males and majority of the purple cluster are females 
+Clusters grey (7) and purple (4) seem to contain both males and females. However, majority of the grey cluster are males and majority of the purple cluster are females
 </li>
 <li>
 Clusters blue (0), light blue (9), purple (4), brown (5) seem to mainly contain females
 </li>
 <li>
-PCA was able to separate the data based on gender without having the data being trained on gender. There is not any cluster that is highly divided in its numbers when it comes to males and females 
+PCA was able to separate the data based on gender without having the data being trained on gender. There is not any cluster that is highly divided in its numbers when it comes to males and females
 
 </li>
 </ul>
@@ -473,16 +461,16 @@ Majority of clusters seem to share two classes at the same time             </li
 <li>
 Cluster 0 the blue cluster seems to mainly have the A and B classes of data             </li>
 <li>
-Cluster 1 the orange cluster seems to mainly have the A and B classes of data 
+Cluster 1 the orange cluster seems to mainly have the A and B classes of data
 </li>
 <li>
-Cluster 2 the green cluster seems to share all classes but with majority being in class D        
+Cluster 2 the green cluster seems to share all classes but with majority being in class D
 </li>
 <li>
 Cluster 3 the red cluster this cluster is difficult to have a conclusion for due to the fact it is extremely being overlapped by the other clusters
 </li>
 <li>
-Cluster 4 the purple cluster this cluster seems to mainly include data from the D class and few others from the C class 
+Cluster 4 the purple cluster this cluster seems to mainly include data from the D class and few others from the C class
 </li>
 <li>
 Cluster 5 the brown cluster this cluster seems to have a mixture of classes but mainly classes A and B
@@ -491,10 +479,10 @@ Cluster 5 the brown cluster this cluster seems to have a mixture of classes but 
 Cluster 6 the pink cluster this cluster seems to have a mixture of classes but mainly classes A and B
 </li>
 <li>
-Cluster 7 the grey cluster this cluster seems to mainly include data from class D 
+Cluster 7 the grey cluster this cluster seems to mainly include data from class D
 </li>
 <li>
-Cluster 8 the olive cluster this cluster seems to include all the classes equally 
+Cluster 8 the olive cluster this cluster seems to include all the classes equally
 </li>
 <li>
 Cluster 9 the light blue cluster it seems to include all classes however there is a strong presence of classes C and D
@@ -516,7 +504,7 @@ PCA was able to separate the data based on performance class without having the 
 
 
 
-</ul>  
+</ul>
 
 </ul>
 
